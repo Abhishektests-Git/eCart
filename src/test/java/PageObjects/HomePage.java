@@ -24,7 +24,8 @@ public class HomePage extends BasePage {
 	WebElement contactUsBtn;
 	@FindBy(xpath = "//a[text()=' Test Cases']")
 	WebElement testCaseBtn;
-	@FindBy(xpath="//div[@class='single-products']/div/p") List<WebElement> productList;
+	@FindBy(xpath = "//div[@class='single-products']/div/p")
+	List<WebElement> productList;
 
 	// action
 	public void clickOnLoginSignUp() {
@@ -35,13 +36,13 @@ public class HomePage extends BasePage {
 	public void clkContactUs() {
 		contactUsBtn.click();
 	}
-	
+
 	public void clkTestCase() {
 		testCaseBtn.click();
 	}
-	
+
 	public List<String> productListArr() {
-		List<String> productNames=productList.stream().map(p->p.getText()).toList();
+		List<String> productNames = productList.stream().map(p -> p.getText()).toList();
 		return productNames;
 	}
 
