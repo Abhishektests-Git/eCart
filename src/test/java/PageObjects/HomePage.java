@@ -2,8 +2,10 @@ package PageObjects;
 
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
@@ -24,8 +26,10 @@ public class HomePage extends BasePage {
 	WebElement contactUsBtn;
 	@FindBy(xpath = "//a[text()=' Test Cases']")
 	WebElement testCaseBtn;
-	@FindBy(xpath = "//div[@class='single-products']/div/p")
+	@FindBy(xpath = "//div[@class='single-products']/div")
 	List<WebElement> productList;
+	@FindBy(xpath = "(//a[text()='View Product'])[1]")
+	WebElement viewProduct;
 
 	// action
 	public void clickOnLoginSignUp() {
@@ -44,6 +48,13 @@ public class HomePage extends BasePage {
 	public List<String> productListArr() {
 		List<String> productNames = productList.stream().map(p -> p.getText()).toList();
 		return productNames;
+	}
+
+	public void clkOnFirstProduct() {
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", viewProduct);
+		viewProduct.click();
 	}
 
 }

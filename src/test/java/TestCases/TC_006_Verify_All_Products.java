@@ -1,5 +1,7 @@
 package TestCases;
 
+import java.util.List;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,6 +13,7 @@ public class TC_006_Verify_All_Products extends setupClass {
 	public void allProducts() {
 		HomePage homePage = new HomePage(driver);
 		int noOfProducts=homePage.productListArr().size();
-		Assert.assertTrue(noOfProducts==40);
+		homePage.clkOnFirstProduct();
+		Assert.assertTrue(noOfProducts==74);
 	}
 }
