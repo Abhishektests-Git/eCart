@@ -2,9 +2,9 @@ package PageObjects;
 
 import org.openqa.selenium.WebDriver;
 
-public class ViewProductPage extends BasePage{
+public class ICViewProductPage extends BasePage{
 //constructor
-	public ViewProductPage(WebDriver driver) {
+	public ICViewProductPage(WebDriver driver) {
 		super(driver);
 	}
 

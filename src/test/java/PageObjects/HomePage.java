@@ -30,6 +30,8 @@ public class HomePage extends BasePage {
 	List<WebElement> productList;
 	@FindBy(xpath = "(//a[text()='View Product'])[1]")
 	WebElement viewProduct;
+	@FindBy(xpath = "//a[text()=' Products']")
+	WebElement productBtn;
 
 	// action
 	public void clickOnLoginSignUp() {
@@ -55,6 +57,9 @@ public class HomePage extends BasePage {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", viewProduct);
 		viewProduct.click();
+	}
+	public void clkOnProductBtn() {
+		productBtn.click();
 	}
 
 }

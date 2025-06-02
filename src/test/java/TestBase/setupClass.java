@@ -24,7 +24,7 @@ public class setupClass {
 	@AfterClass
 	public void teardown() throws InterruptedException {
 		Thread.sleep(10000);
-		driver.quit();
+//		driver.quit();
 	}
 	
 }

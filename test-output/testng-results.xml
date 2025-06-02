@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-02T23:54:01 IST" name="Default suite" finished-at="2025-06-02T23:54:26 IST" duration-ms="24364">
+  <suite started-at="2025-06-03T00:29:54 IST" name="Default suite" finished-at="2025-06-03T00:30:18 IST" duration-ms="24287">
     <groups>
     </groups>
-    <test started-at="2025-06-02T23:54:01 IST" name="Default test" finished-at="2025-06-02T23:54:26 IST" duration-ms="24364">
-      <class name="TestCases.TC_006_Verify_All_Products">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.TC_006_Verify_All_Products@f5acb9d]" started-at="2025-06-02T23:54:01 IST" name="setup" finished-at="2025-06-02T23:54:12 IST" duration-ms="10684" status="PASS">
+    <test started-at="2025-06-03T00:29:54 IST" name="Default test" finished-at="2025-06-03T00:30:18 IST" duration-ms="24287">
+      <class name="TestCases.TC_007_Search_Product">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.TC_007_Search_Product@f5acb9d]" started-at="2025-06-03T00:29:54 IST" name="setup" finished-at="2025-06-03T00:29:59 IST" duration-ms="4835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="allProducts()[pri:0, instance:TestCases.TC_006_Verify_All_Products@f5acb9d]" started-at="2025-06-02T23:54:12 IST" name="allProducts" finished-at="2025-06-02T23:54:15 IST" duration-ms="3564" status="PASS">
+        <test-method signature="searchProduct()[pri:0, instance:TestCases.TC_007_Search_Product@f5acb9d]" started-at="2025-06-03T00:29:59 IST" name="searchProduct" finished-at="2025-06-03T00:30:08 IST" duration-ms="9411" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- allProducts -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.TC_006_Verify_All_Products@f5acb9d]" started-at="2025-06-02T23:54:15 IST" name="teardown" finished-at="2025-06-02T23:54:26 IST" duration-ms="10084" status="PASS">
+        </test-method> <!-- searchProduct -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.TC_007_Search_Product@f5acb9d]" started-at="2025-06-03T00:30:08 IST" name="teardown" finished-at="2025-06-03T00:30:18 IST" duration-ms="10011" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- TestCases.TC_006_Verify_All_Products -->
+      </class> <!-- TestCases.TC_007_Search_Product -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
